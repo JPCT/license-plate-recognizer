@@ -74,8 +74,3 @@ class LPR:
             return txt
         else:
             return "No license plate found"
-
-lpr = LPR()
-image = cv2.imread("imgs/test2.jpg")
-image = imutils.resize(image, height=500, width=500 )
-print(lpr.read_license(image))
